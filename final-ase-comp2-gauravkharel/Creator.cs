@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace final_ase_comp2_gauravkharel
 {
-    class Creator
+    abstract class Creator
     {
+        public abstract Shape getShape(string ShapeType);
+
     }
 }

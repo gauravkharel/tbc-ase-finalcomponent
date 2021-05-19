@@ -94,7 +94,7 @@ namespace final_ase_comp2_gauravkharel
             // aboutCanvasApp
             // 
             this.aboutCanvasApp.Name = "aboutCanvasApp";
-            this.aboutCanvasApp.Size = new System.Drawing.Size(224, 32);
+            this.aboutCanvasApp.Size = new System.Drawing.Size(153, 32);
             this.aboutCanvasApp.Text = "About";
             this.aboutCanvasApp.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -136,6 +136,7 @@ namespace final_ase_comp2_gauravkharel
             this.runBtn.TabIndex = 3;
             this.runBtn.Text = "Run";
             this.runBtn.UseVisualStyleBackColor = true;
+            this.runBtn.Click += new System.EventHandler(this.runBtn_Click);
             // 
             // clearBtn
             // 
