@@ -17,7 +17,7 @@ namespace final_ase_comp2_gauravkharel
 
         Creator factory = new Factory();
         Pen myPen = new Pen(Color.Red);
-        int x = 0, y = 0, width, height;
+        int x = 0, y = 0, width, height, repeatval;
         public Canvas()
         {
             InitializeComponent();
@@ -49,6 +49,11 @@ namespace final_ase_comp2_gauravkharel
             textBox1.Text += "Command Save";
         }
 
+        private void Canvas_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void loadToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog loadFileDialog = new OpenFileDialog();
@@ -75,7 +80,7 @@ namespace final_ase_comp2_gauravkharel
             {
 
                 string[] cmd = commandline[k].Split(' ');
-                if (textBox2.Text.Equals("Run") == true)
+                if (textBox2.Text.Equals("run") == true)
                 {
 
 

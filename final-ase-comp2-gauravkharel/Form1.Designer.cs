@@ -56,7 +56,6 @@ namespace final_ase_comp2_gauravkharel
             this.menuStrip1.Size = new System.Drawing.Size(877, 36);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // fileToolStripMenuItem
             // 
@@ -71,14 +70,14 @@ namespace final_ase_comp2_gauravkharel
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(141, 32);
             this.loadToolStripMenuItem.Text = "Load";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(141, 32);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -125,7 +124,6 @@ namespace final_ase_comp2_gauravkharel
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(299, 164);
             this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // runBtn
             // 
