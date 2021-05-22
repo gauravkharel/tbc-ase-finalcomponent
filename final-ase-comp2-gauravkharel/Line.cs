@@ -27,10 +27,10 @@ namespace final_ase_comp2_gauravkharel
                 Pen p = new Pen(Color.Black, 2);
                 g.DrawLine(p, x, y, toX, toY);
             }
-            catch (Exception ex)
+            catch (Exception exception)
             {
 
-                throw ex;
+                throw exception;
             }
         }
 

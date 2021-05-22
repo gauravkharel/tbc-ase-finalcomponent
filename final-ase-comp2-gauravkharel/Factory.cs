@@ -16,7 +16,10 @@ namespace final_ase_comp2_gauravkharel
             {
                 return new Line();
             }
-
+            else if (shapeType.Equals("rectangle"))
+            {
+                return new Rectangle();
+            }
             else
             {
                 System.ArgumentException argEx = new System.ArgumentException("Factory error: " + shapeType + " does not exist");

@@ -204,6 +204,30 @@ namespace final_ase_comp2_gauravkharel
                         }
 
                     }
+                    else if (cmd[0].Equals("rectangle") == true)
+                    {
+                        if (cmd.Length != 2)
+                        {
+                            MessageBox.Show("incorrect parameter, give input as: rectangle 100,200");
+                        }
+                        else
+                        {
+                            string[] param = cmd[1].Split(',');
+                            if (param.Length != 2)
+                            {
+                                MessageBox.Show("Invalid Parameter, please user only 2 parameter");
+                            }
+                            else
+                            {
+                                Int32.TryParse(param[0], out width);
+                                Int32.TryParse(param[1], out height);
+                                Shape circle = factory.getShape("rectangle");
+                                Rectangle r = new Rectangle();
+                                r.set(x, y, width, height);
+                                r.draw(g);
+                            }
+                        }
+                    }
                 }
             }
         }
