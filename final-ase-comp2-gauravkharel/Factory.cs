@@ -20,6 +20,10 @@ namespace final_ase_comp2_gauravkharel
             {
                 return new Rectangle();
             }
+            else if (shapeType.Equals("circle"))
+            {
+                return new Circle();
+            }
             else
             {
                 System.ArgumentException argEx = new System.ArgumentException("Factory error: " + shapeType + " does not exist");

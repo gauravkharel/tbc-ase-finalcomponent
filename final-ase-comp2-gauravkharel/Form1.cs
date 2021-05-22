@@ -17,7 +17,7 @@ namespace final_ase_comp2_gauravkharel
 
         Creator factory = new Factory();
         Pen myPen = new Pen(Color.Red);
-        int x = 0, y = 0, width, height, repeatval;
+        int x = 0, y = 0, width, height, repeatval, radius;
         public Canvas()
         {
             InitializeComponent();
@@ -171,7 +171,7 @@ namespace final_ase_comp2_gauravkharel
                             MessageBox.Show("Syntax Error");
                         }
                     }
-                    else if (cmd[0].Equals("drawto") == true)
+                    else if (cmd[0].Equals("drawTo") == true)
                     {
                         string[] param = cmd[1].Split(',');
                         int x = 0, y = 0;
@@ -186,6 +186,7 @@ namespace final_ase_comp2_gauravkharel
                             drawTo(x, y);
                         }
                     }
+
                     else if (cmd[0].Equals("drawline") == true)
                     {
                         string[] param = cmd[1].Split(',');
@@ -204,6 +205,7 @@ namespace final_ase_comp2_gauravkharel
                         }
 
                     }
+
                     else if (cmd[0].Equals("rectangle") == true)
                     {
                         if (cmd.Length != 2)
@@ -228,6 +230,30 @@ namespace final_ase_comp2_gauravkharel
                             }
                         }
                     }
+
+                    else if (cmd[0].Equals("circle") == true)
+                    {
+                        if (cmd.Length != 2) { MessageBox.Show("Incorrect parameter: Use syntax as circle 10"); }
+
+                        {
+                            if (cmd[1].Equals("radius") == true)
+                            {
+                                Shape circle = factory.getShape("circle");
+                                Circle c = new Circle();
+                                c.set(x, y, radius);
+                                c.draw(g);
+                            }
+                            else
+                            {
+                                Int32.TryParse(cmd[1], out radius);
+                                Shape circle = factory.getShape("circle");
+                                Circle c = new Circle();
+                                c.set(x, y, radius);
+                                c.draw(g);
+                            }
+                        }
+                    }
+
                 }
             }
         }
