@@ -24,6 +24,10 @@ namespace final_ase_comp2_gauravkharel
             {
                 return new Circle();
             }
+            else if (shapeType.Equals("triangle"))
+            {
+                return new Triangle();
+            }
             else
             {
                 System.ArgumentException argEx = new System.ArgumentException("Factory error: " + shapeType + " does not exist");

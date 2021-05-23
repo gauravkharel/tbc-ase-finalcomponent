@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace final_ase_comp2_gauravkharel
 {
     public class Rectangle : Shape
@@ -30,7 +31,8 @@ namespace final_ase_comp2_gauravkharel
         {
             try
             {
-                Pen p = new Pen(Color.Black, 2); g.DrawRectangle(p, x - (width / 2), y - (height / 2), width * 2, height * 2);
+                Pen p = new Pen(Color.Black, 2); 
+                g.DrawRectangle(p, x - (width / 2), y - (height / 2), width * 2, height * 2);
             }
             catch (Exception ex)
             {

@@ -14,10 +14,9 @@ namespace final_ase_comp2_gauravkharel
 {
     public partial class Canvas : Form
     {
-
         Creator factory = new Factory();
         Pen myPen = new Pen(Color.Red);
-        int x = 0, y = 0, width, height, repeatval, radius;
+        int x = 0, y = 0, width, height, radius, repeatval;
         public Canvas()
         {
             InitializeComponent();
@@ -171,6 +170,7 @@ namespace final_ase_comp2_gauravkharel
                             MessageBox.Show("Syntax Error");
                         }
                     }
+
                     else if (cmd[0].Equals("drawTo") == true)
                     {
                         string[] param = cmd[1].Split(',');
@@ -231,29 +231,57 @@ namespace final_ase_comp2_gauravkharel
                         }
                     }
 
-                    else if (cmd[0].Equals("circle") == true)
+                    else if (cmd[0].Equals("triangle") == true)
                     {
-                        if (cmd.Length != 2) { MessageBox.Show("Incorrect parameter: Use syntax as circle 10"); }
-
+                        string[] param = cmd[1].Split(',');
+                        if (param.Length != 3)
                         {
-                            if (cmd[1].Equals("radius") == true)
-                            {
-                                Shape circle = factory.getShape("circle");
-                                Circle c = new Circle();
-                                c.set(x, y, radius);
-                                c.draw(g);
-                            }
-                            else
-                            {
-                                Int32.TryParse(cmd[1], out radius);
-                                Shape circle = factory.getShape("circle");
-                                Circle c = new Circle();
-                                c.set(x, y, radius);
-                                c.draw(g);
-                            }
+                            MessageBox.Show("Incorrect Parameter");
+
+                        }
+                        else
+                        {
+                            Int32.TryParse(param[0], out width);
+                            Int32.TryParse(param[1], out height);
+                            Shape circle = factory.getShape("triangle");
+                            Triangle r = new Triangle();
+                            r.set(x, y, width, height);
+                            r.draw(g);
                         }
                     }
 
+                    else if (!cmd[0].Equals(null))
+                    {
+                        int errorLine = k + 1;
+                        MessageBox.Show("Invalid syntax Found on line " + errorLine, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                 else if (cmd[0].Equals("circle") == true)
+                {
+                    if (cmd.Length != 2) { MessageBox.Show("Incorrect parameter: Use syntax as circle 10"); }
+
+                    {
+                        if (cmd[1].Equals("radius") == true)
+                        {
+                            Shape circle = factory.getShape("circle");
+                            Circle c = new Circle();
+                            c.set(x, y, radius);
+                            c.draw(g);
+                        }
+                        else
+                        {
+                            Int32.TryParse(cmd[1], out radius);
+                            Shape circle = factory.getShape("circle");
+                            Circle c = new Circle();
+                            c.set(x, y, radius);
+                            c.draw(g);
+                        }
+                    }
+                }
+
+                else
+                {
+                    MessageBox.Show("Please Type 'Run'  Command to get the output", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
