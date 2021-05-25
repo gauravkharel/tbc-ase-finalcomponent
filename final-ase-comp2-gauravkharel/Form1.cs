@@ -103,12 +103,12 @@ namespace final_ase_comp2_gauravkharel
                         textBox2.Text = "";
                         panel1.Refresh();
                     }
-                    else if (cmd[0].Equals("moveTo") == true)
+                    else if (cmd[0].Equals("moveto") == true)
                     {
                         panel1.Refresh();
                         string[] param = cmd[1].Split(',');
                         if (param.Length != 2)
-                        { MessageBox.Show("Please input the value as --> moveTo 100,200 "); }
+                        { MessageBox.Show("Please input the value as --> moveto 100,200 "); }
                         else
                         {
                             Int32.TryParse(param[0], out x);
@@ -205,6 +205,28 @@ namespace final_ase_comp2_gauravkharel
                         }
 
                     }
+                    else if (cmd[0].Equals("circle") == true)
+                    {
+                        if (cmd.Length != 2) { MessageBox.Show("Incorrect parameter"); }
+
+                        {
+                            if (cmd[1].Equals("radius") == true)
+                            {
+                                Shape circle = factory.getShape("circle");
+                                Circle c = new Circle();
+                                c.set(x, y, radius);
+                                c.draw(g);
+                            }
+                            else
+                            {
+                                Int32.TryParse(cmd[1], out radius);
+                                Shape circle = factory.getShape("circle");
+                                Circle c = new Circle();
+                                c.set(x, y, radius);
+                                c.draw(g);
+                            }
+                        }
+                    }
 
                     else if (cmd[0].Equals("rectangle") == true)
                     {
@@ -217,7 +239,7 @@ namespace final_ase_comp2_gauravkharel
                             string[] param = cmd[1].Split(',');
                             if (param.Length != 2)
                             {
-                                MessageBox.Show("Invalid Parameter, please user only 2 parameter");
+                                MessageBox.Show("Invalid Parameter, please use only 2 parameter");
                             }
                             else
                             {
@@ -256,32 +278,9 @@ namespace final_ase_comp2_gauravkharel
                         MessageBox.Show("Invalid syntax Found on line " + errorLine, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
-                 else if (cmd[0].Equals("circle") == true)
-                {
-                    if (cmd.Length != 2) { MessageBox.Show("Incorrect parameter: Use syntax as circle 10"); }
-
-                    {
-                        if (cmd[1].Equals("radius") == true)
-                        {
-                            Shape circle = factory.getShape("circle");
-                            Circle c = new Circle();
-                            c.set(x, y, radius);
-                            c.draw(g);
-                        }
-                        else
-                        {
-                            Int32.TryParse(cmd[1], out radius);
-                            Shape circle = factory.getShape("circle");
-                            Circle c = new Circle();
-                            c.set(x, y, radius);
-                            c.draw(g);
-                        }
-                    }
-                }
-
                 else
                 {
-                    MessageBox.Show("Please Type 'Run'  Command to get the output", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Please Type 'run'  command to get the output", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

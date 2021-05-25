@@ -30,6 +30,7 @@ namespace final_ase_comp2_gauravkharel
             }
             else
             {
+                //Exception Handling
                 System.ArgumentException argEx = new System.ArgumentException("Factory error: " + shapeType + " does not exist");
                 throw argEx;
             }

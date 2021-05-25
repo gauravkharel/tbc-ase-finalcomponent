@@ -9,7 +9,8 @@ namespace final_ase_comp2_gauravkharel
 {
     public class Line : Shape
     {
-
+        // passing values to intiated variable as x for x-axis 
+        // and y for y-axis
         public int x, y, toX, toY;
 
         public Line() : base()
@@ -20,6 +21,8 @@ namespace final_ase_comp2_gauravkharel
         public Line(int x, int y, int toX, int toY)
         { }
 
+
+        //implement drawing elements
         public void draw(Graphics g)
         {
             try
