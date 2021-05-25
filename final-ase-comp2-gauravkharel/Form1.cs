@@ -14,11 +14,15 @@ namespace final_ase_comp2_gauravkharel
 {
     public partial class Canvas : Form
     {
+        /// <summary>
+        /// Initializing all the variable in this form class
+        /// </summary>
         Creator factory = new Factory();
-        Pen myPen = new Pen(Color.Red);
+        Pen myPen = new Pen(Color.Black);
         int x = 0, y = 0, width, height, radius, repeatval;
         public Canvas()
         {
+            
             InitializeComponent();
         }
 
@@ -284,11 +288,21 @@ namespace final_ase_comp2_gauravkharel
                 }
             }
         }
-
+       
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="toX"></param>
+        /// <param name="toY"></param>
 
         public void moveTo(int toX, int toY)
         { x = toX; y = toY; }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="toX"></param>
+        /// <param name="toY"></param>
         public void drawTo(int toX, int toY)
         { x = toX; y = toY; }
 

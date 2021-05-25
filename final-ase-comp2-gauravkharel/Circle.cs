@@ -7,22 +7,34 @@ using System.Threading.Tasks;
 
 namespace final_ase_comp2_gauravkharel
 {
+    /// <summary>
+    /// the concrete class for Circle 
+    /// </summary>
     public class Circle : Shape
     {
 
         public int x, y, radius;
 
-
         public Circle() : base()
         {
         }
 
-
+        /// <summary>
+        /// the concrete class for Circle shape
+        /// </summary>
+        /// <param name="x">width</param>
+        /// <param name="y">height</param>
+        /// <param name="radius">radius of the circle</param>
         public Circle(int x, int y, int radius)
         {
             this.radius = radius;
         }
 
+        /// <summary>
+        /// Graphics class to inherit shape to the main form to draw Circle
+        /// with, exceptional handling
+        /// </summary>
+        /// <param name="g"></param>
         public void draw(Graphics g)
         {
             try
@@ -37,7 +49,11 @@ namespace final_ase_comp2_gauravkharel
             }
         }
 
-
+        /// <summary>
+        /// to handle the exception when user don't input the 
+        /// variable as shown
+        /// </summary>
+        /// <param name="list"></param>
         public void set(params int[] list)
         {
             try

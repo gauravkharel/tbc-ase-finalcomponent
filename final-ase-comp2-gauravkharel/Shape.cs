@@ -9,6 +9,10 @@ namespace final_ase_comp2_gauravkharel
 {
     interface Shape
     {
+        /// <summary>
+        /// The interface method used for drawing shapes
+        /// </summary>
+        /// <param name="g">refrencing interface method</param>
         void draw(Graphics g);
 
         void set(params int[] list);

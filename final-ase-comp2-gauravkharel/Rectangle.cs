@@ -8,25 +8,40 @@ using System.Threading.Tasks;
 
 namespace final_ase_comp2_gauravkharel
 {
+    /// <summary>
+    /// concrete Rectangle Class
+    /// </summary>
     public class Rectangle : Shape
     {
 
 
         public int x, y, width, height;
 
-
+        /// <summary>
+        /// initializing the value of variables width and height 
+        /// </summary>
         public Rectangle() : base()
         {
             width = 0;
             height = 0;
         }
-
+        /// <summary>
+        /// the current instance of the class
+        /// </summary>
+        /// <param name="x">X-axis in the canvas</param>
+        /// <param name="y">Y-axis in the canvas </param>
+        /// <param name="width">width of the rectangle</param>
+        /// <param name="height">height of the rectangle</param>
         public Rectangle(int x, int y, int width, int height)
         {
             this.width = width;
             this.height = height;
         }
-
+        /// <summary>
+        /// Graphics class to inherit shape to the main form to draw Rectangle
+        /// with, exceptional handling
+        /// </summary>
+        /// <param name="g"></param>
         public void draw(Graphics g)
         {
             try
@@ -40,7 +55,10 @@ namespace final_ase_comp2_gauravkharel
                 throw ex;
             }
         }
-
+        /// <summary>
+        /// to handle exception when parameter value exceeds
+        /// </summary>
+        /// <param name="list">refers to array of the pararameters</param>
         public void set(params int[] list)
         {
             try

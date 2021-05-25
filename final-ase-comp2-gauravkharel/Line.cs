@@ -7,22 +7,22 @@ using System.Threading.Tasks;
 
 namespace final_ase_comp2_gauravkharel
 {
+    /// <summary>
+    /// inherited from Shape class
+    /// </summary>
     public class Line : Shape
     {
         // passing values to intiated variable as x for x-axis 
         // and y for y-axis
         public int x, y, toX, toY;
 
-        public Line() : base()
-        {
 
-        }
-
-        public Line(int x, int y, int toX, int toY)
-        { }
-
-
-        //implement drawing elements
+        
+        /// <summary>
+        /// Graphics class to inherit shape to the main form to draw Line
+        /// with, exceptional handling
+        /// </summary>
+        /// <param name="g"></param>
         public void draw(Graphics g)
         {
             try
@@ -36,7 +36,10 @@ namespace final_ase_comp2_gauravkharel
                 throw exception;
             }
         }
-
+        /// <summary>
+        /// including all parameters into the array
+        /// </summary>
+        /// <param name="list">array comprises all parameters</param>
         public void set(params int[] list)
         {
             this.x = list[0];
