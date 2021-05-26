@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace final_ase_comp2_gauravkharel
 {
     /// <summary>
-    /// abstract class for adding shapes to the main class
+    /// abstract Creator class for adding shapes to the main class
     /// </summary>
     abstract class Creator
     {

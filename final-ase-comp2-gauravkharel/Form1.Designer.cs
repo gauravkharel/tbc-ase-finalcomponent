@@ -109,8 +109,9 @@ namespace final_ase_comp2_gauravkharel
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Location = new System.Drawing.Point(12, 86);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(397, 331);
+            this.panel1.Size = new System.Drawing.Size(402, 337);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // textBox2
             // 
@@ -126,7 +127,7 @@ namespace final_ase_comp2_gauravkharel
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.Info;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(450, 86);
+            this.textBox1.Location = new System.Drawing.Point(449, 86);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(299, 164);
@@ -135,7 +136,7 @@ namespace final_ase_comp2_gauravkharel
             // runBtn
             // 
             this.runBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.runBtn.Location = new System.Drawing.Point(464, 358);
+            this.runBtn.Location = new System.Drawing.Point(464, 345);
             this.runBtn.Name = "runBtn";
             this.runBtn.Size = new System.Drawing.Size(102, 41);
             this.runBtn.TabIndex = 3;
@@ -146,7 +147,7 @@ namespace final_ase_comp2_gauravkharel
             // clearBtn
             // 
             this.clearBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearBtn.Location = new System.Drawing.Point(591, 358);
+            this.clearBtn.Location = new System.Drawing.Point(595, 345);
             this.clearBtn.Name = "clearBtn";
             this.clearBtn.Size = new System.Drawing.Size(102, 41);
             this.clearBtn.TabIndex = 4;
@@ -218,7 +219,7 @@ namespace final_ase_comp2_gauravkharel
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(446, 282);
+            this.label7.Location = new System.Drawing.Point(446, 288);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(92, 18);
             this.label7.TabIndex = 11;

@@ -52,6 +52,12 @@ namespace final_ase_comp2_gauravkharel
             textBox1.Text += "Command Save";
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+
+        }
+
         private void Canvas_Load(object sender, EventArgs e)
         {
 
@@ -236,7 +242,7 @@ namespace final_ase_comp2_gauravkharel
                     {
                         if (cmd.Length != 2)
                         {
-                            MessageBox.Show("incorrect parameter, give input as: rectangle 100,200");
+                            MessageBox.Show("Incorrect Parameter, give input as: rectangle 100,200");
                         }
                         else
                         {
@@ -279,7 +285,7 @@ namespace final_ase_comp2_gauravkharel
                     else if (!cmd[0].Equals(null))
                     {
                         int errorLine = k + 1;
-                        MessageBox.Show("Invalid syntax Found on line " + errorLine, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Invalid syntax found on line " + errorLine, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 else
