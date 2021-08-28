@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>final-ase-comp2-gauravkharel</name>
+    </assembly>
+    <members>
+        <member name="T:final_ase_comp2_gauravkharel.Circle">
+            <summary>
+            the concrete class for Circle 
+            </summary>
+        </member>
+        <member name="M:final_ase_comp2_gauravkharel.Circle.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            the concrete class for Circle shape
+            </summary>
+            <param name="x">width</param>
+            <param name="y">height</param>
+            <param name="radius">radius of the circle</param>
+        </member>
+        <member name="M:final_ase_comp2_gauravkharel.Circle.draw(System.Drawing.Graphics)">
+            <summary>
+            Graphics class to inherit shape to the main form to draw Circle
+            with, exceptional handling
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:final_ase_comp2_gauravkharel.Circle.set(System.Int32[])">
+            <summary>
+            to handle the exception when user don't input the 
+            variable as shown
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="T:final_ase_comp2_gauravkharel.Creator">
+            <summary>
+            abstract Creator class for adding shapes to the main class
+            </summary>
+        </member>
+        <member name="M:final_ase_comp2_gauravkharel.Creator.getShape(System.String)">
+            <summary>
+            the abstract class Shape is to implement simplicity as Factory Design Pattern work
+            </summary>
+            <param name="ShapeType">The shape of the object</param>
+            <returns></returns>
+        </member>
+        <member name="M:final_ase_comp2_gauravkharel.Factory.getShape(System.String)">
+            <summary>
+            Using Factory Pattern to correlate different shapes concrete class to main form
+            </summary>
+            <param name="shapeType">The shape of the object</param>
+            <returns></returns>
+        </member>
+        <member name="F:final_ase_comp2_gauravkharel.Canvas.factory">
+            <summary>
+            Initializing all the variable in this form class
+            </summary>
+        </member>
+        <member name="M:final_ase_comp2_gauravkharel.Canvas.moveTo(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="toX"></param>
+            <param name="toY"></param>
+        </member>
+        <member name="M:final_ase_comp2_gauravkharel.Canvas.drawTo(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="toX"></param>
+            <param name="toY"></param>
+        </member>
+        <member name="F:final_ase_comp2_gauravkharel.Canvas.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:final_ase_comp2_gauravkharel.Canvas.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:final_ase_comp2_gauravkharel.Canvas.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:final_ase_comp2_gauravkharel.Line">
+            <summary>
+            inherited from Shape class
+            </summary>
+        </member>
+        <member name="M:final_ase_comp2_gauravkharel.Line.draw(System.Drawing.Graphics)">
+            <summary>
+            Graphics class to inherit shape to the main form to draw Line
+            with, exceptional handling
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:final_ase_comp2_gauravkharel.Line.set(System.Int32[])">
+            <summary>
+            including all parameters into the array
+            </summary>
+            <param name="list">array comprises all parameters</param>
+        </member>
+        <member name="M:final_ase_comp2_gauravkharel.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:final_ase_comp2_gauravkharel.Rectangle">
+            <summary>
+            concrete Rectangle Class
+            </summary>
+        </member>
+        <member name="M:final_ase_comp2_gauravkharel.Rectangle.#ctor">
+            <summary>
+            initializing the value of variables width and height 
+            </summary>
+        </member>
+        <member name="M:final_ase_comp2_gauravkharel.Rectangle.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            the current instance of the class
+            </summary>
+            <param name="x">X-axis in the canvas</param>
+            <param name="y">Y-axis in the canvas </param>
+            <param name="width">width of the rectangle</param>
+            <param name="height">height of the rectangle</param>
+        </member>
+        <member name="M:final_ase_comp2_gauravkharel.Rectangle.draw(System.Drawing.Graphics)">
+            <summary>
+            Graphics class to inherit shape to the main form to draw Rectangle
+            with, exceptional handling
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:final_ase_comp2_gauravkharel.Rectangle.set(System.Int32[])">
+            <summary>
+            to handle exception when parameter value exceeds
+            </summary>
+            <param name="list">refers to array of the pararameters</param>
+        </member>
+        <member name="M:final_ase_comp2_gauravkharel.Shape.draw(System.Drawing.Graphics)">
+            <summary>
+            The interface method used for drawing shapes
+            </summary>
+            <param name="g">refrencing interface method</param>
+        </member>
+        <member name="M:final_ase_comp2_gauravkharel.Triangle.draw(System.Drawing.Graphics)">
+            <summary>
+            
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="T:final_ase_comp2_gauravkharel.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:final_ase_comp2_gauravkharel.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:final_ase_comp2_gauravkharel.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -113,6 +113,16 @@ namespace final_ase_comp2_gauravkharel
                         textBox2.Text = "";
                         panel1.Refresh();
                     }
+                    else if (cmd[0].Equals("pen") == true)
+                    {
+                        
+
+                    }
+                    else if (cmd[0].Equals("fill") == true)
+                    {
+
+
+                    }
                     else if (cmd[0].Equals("moveto") == true)
                     {
                         panel1.Refresh();
@@ -288,6 +298,7 @@ namespace final_ase_comp2_gauravkharel
                         MessageBox.Show("Invalid syntax found on line " + errorLine, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
+           
                 else
                 {
                     MessageBox.Show("Please Type 'run'  command to get the output", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

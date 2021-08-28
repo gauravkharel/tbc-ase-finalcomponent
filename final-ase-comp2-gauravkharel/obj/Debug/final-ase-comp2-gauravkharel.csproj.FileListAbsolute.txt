@@ -1,10 +1,11 @@
 C:\Users\Admin\source\repos\final-ase-comp2-gauravkharel\final-ase-comp2-gauravkharel\bin\Debug\final-ase-comp2-gauravkharel.exe.config
 C:\Users\Admin\source\repos\final-ase-comp2-gauravkharel\final-ase-comp2-gauravkharel\bin\Debug\final-ase-comp2-gauravkharel.exe
 C:\Users\Admin\source\repos\final-ase-comp2-gauravkharel\final-ase-comp2-gauravkharel\bin\Debug\final-ase-comp2-gauravkharel.pdb
-C:\Users\Admin\source\repos\final-ase-comp2-gauravkharel\final-ase-comp2-gauravkharel\obj\Debug\final-ase-comp2-gauravkharel.csprojAssemblyReference.cache
 C:\Users\Admin\source\repos\final-ase-comp2-gauravkharel\final-ase-comp2-gauravkharel\obj\Debug\final_ase_comp2_gauravkharel.Canvas.resources
 C:\Users\Admin\source\repos\final-ase-comp2-gauravkharel\final-ase-comp2-gauravkharel\obj\Debug\final_ase_comp2_gauravkharel.Properties.Resources.resources
 C:\Users\Admin\source\repos\final-ase-comp2-gauravkharel\final-ase-comp2-gauravkharel\obj\Debug\final-ase-comp2-gauravkharel.csproj.GenerateResource.cache
 C:\Users\Admin\source\repos\final-ase-comp2-gauravkharel\final-ase-comp2-gauravkharel\obj\Debug\final-ase-comp2-gauravkharel.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\final-ase-comp2-gauravkharel\final-ase-comp2-gauravkharel\obj\Debug\final-ase-comp2-gauravkharel.exe
 C:\Users\Admin\source\repos\final-ase-comp2-gauravkharel\final-ase-comp2-gauravkharel\obj\Debug\final-ase-comp2-gauravkharel.pdb
+C:\Users\Admin\source\repos\final-ase-comp2-gauravkharel\final-ase-comp2-gauravkharel\obj\Debug\final-ase-comp2-gauravkharel.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\final-ase-comp2-gauravkharel\final-ase-comp2-gauravkharel\bin\Debug\final-ase-comp2-gauravkharel.xml

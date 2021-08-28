@@ -1,0 +1,6 @@
+C:\Users\Admin\source\repos\final-ase-comp2-gauravkharel\UnitTest\obj\Debug\netcoreapp3.1\UnitTest.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\final-ase-comp2-gauravkharel\UnitTest\obj\Debug\netcoreapp3.1\UnitTest.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\final-ase-comp2-gauravkharel\UnitTest\obj\Debug\netcoreapp3.1\UnitTest.AssemblyInfo.cs
+C:\Users\Admin\source\repos\final-ase-comp2-gauravkharel\UnitTest\obj\Debug\netcoreapp3.1\UnitTest.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\final-ase-comp2-gauravkharel\UnitTest\obj\Debug\netcoreapp3.1\UnitTest.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\final-ase-comp2-gauravkharel\UnitTest\obj\Debug\netcoreapp3.1\UnitTest.GeneratedMSBuildEditorConfig.editorconfig

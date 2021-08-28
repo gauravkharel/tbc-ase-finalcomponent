@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\final-ase-comp2-gauravkharel",
+    "\\UnitTest",
+    "\\UnitTest101"
   ],
-  "SelectedNode": "\\final-ase-comp2-gauravkharel.sln",
+  "SelectedNode": "\\UnitTest\\ShapeTest.cs.csproj",
   "PreviewInSolutionExplorer": false
 }

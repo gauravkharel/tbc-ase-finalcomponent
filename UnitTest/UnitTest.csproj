@@ -17,4 +17,8 @@
     <PackageReference Include="coverlet.collector" Version="1.3.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\final-ase-comp2-gauravkharel\final-ase-comp2-gauravkharel.csproj" />
+  </ItemGroup>
+
 </Project>
